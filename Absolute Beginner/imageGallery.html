@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+
+    <style>
+      body {
+        background-color: #e9e1e1;
+      }
+
+      .image-gallery {
+        display: grid;
+
+        grid-template-columns: 250px 250px 250px;
+
+        gap: 15px;
+
+        justify-content: center;
+      }
+
+      .image-gallery img {
+        width: 250px;
+        height: 200px;
+
+        object-fit: cover;
+
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="image-gallery">
+        <img
+          class="first"
+          src="../images/claudio-schwarz-_zkQBgeX4EI-unsplash.jpg"
+          alt="image1"
+        />
+
+        <img
+          class="second"
+          src="../images/dave-meckler-0ltzud5qqYc-unsplash.jpg"
+          alt="image2"
+        />
+
+        <img
+          class="third"
+          src="../images/peter-thomas-y9fxeCZQyuM-unsplash.jpg"
+          alt="image3"
+        />
+
+        <img
+          class="fourth"
+          src="../images/sander-traa-zJytRBYiBM4-unsplash.jpg"
+          alt="image4"
+        />
+
+        <img
+          class="fifth"
+          src="../images/simone-mascellari-Mjp5k5_gVjw-unsplash.jpg"
+          alt="image5"
+        />
+
+        <img
+          class="sixth"
+          src="../images/valentin-lacoste-b8xFQYyEQbE-unsplash.jpg"
+          alt="image6"
+        />
+      </div>
+    </main>
+  </body>
+</html>
