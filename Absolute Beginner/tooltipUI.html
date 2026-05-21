@@ -40,6 +40,18 @@
         visibility: visible;
         opacity: 1;
       }
+
+      .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-width: 6px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+      }
     </style>
   </head>
   <body>
