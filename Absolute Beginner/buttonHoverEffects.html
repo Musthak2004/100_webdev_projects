@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Hover Effects</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      button {
+        padding: 12px 24px;
+        margin: 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      .btn1 {
+        background-color: royalblue;
+        color: white;
+      }
+
+      .btn1:hover {
+        background-color: navy;
+      }
+
+      .btn2 {
+        background-color: green;
+        color: white;
+      }
+
+      .btn2:hover {
+        transform: scale(1.1);
+      }
+
+      .btn3 {
+        background-color: orange;
+        color: white;
+      }
+
+      .btn3:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn4 {
+        background-color: crimson;
+        color: white;
+      }
+
+      .btn4:hover {
+        transform: translateY(-5px);
+      }
+
+      .btn5 {
+        background-color: #4f46e5;
+        color: white;
+        border-radius: 8px;
+      }
+
+      .btn5:hover {
+        background-color: #3730a3;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Button Hover Effects</h1>
+
+    <button class="btn1">Color Hover</button>
+    <button class="btn2">Grow Hover</button>
+    <button class="btn3">Shadow Hover</button>
+    <button class="btn4">Lift Hover</button>
+    <button class="btn5">Professional Hover</button>
+  </body>
+</html>
