@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal UI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .modal-container {
+        background-color: white;
+        width: 400px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .modal-content {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .modal-buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .btn1,
+      .btn2 {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .btn1 {
+        background-color: #3498db;
+        color: white;
+      }
+
+      .btn2 {
+        background-color: #e74c32;
+        color: white;
+      }
+
+      .btn1:hover {
+        opacity: 0.9;
+      }
+
+      .btn2:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="modal-content">
+        <p>
+          Your data won't be saved! Are you sure you want to quit registration?
+        </p>
+
+        <div class="modal-buttons">
+          <button class="btn1">Continue Editing</button>
+          <button class="btn2">Quit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
