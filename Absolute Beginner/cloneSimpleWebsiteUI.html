@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone-Simple-Website-UI</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f4f4f4;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .nav-links ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .nav-links .logo-link {
+        font-size: 25px;
+        font-weight: bold;
+        color: #000;
+      }
+
+      .nav-links a:hover {
+        color: #007bff;
+      }
+
+      .nav-bar button {
+        margin: 10px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head-container">
+      <div class="nav-bar">
+        <nav class="nav-links">
+          <ul>
+            <li>
+              <a class="logo-link" href="#">Lando</a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <button style="background: none; color: #333">Log in</button>
+          <button style="background: #007bff; color: white">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
