@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Color Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-card">
+        <header>
+          <h1>🎨 Random Color Generator</h1>
+          <p class="subtitle">Click the button to generate a random color</p>
+        </header>
+
+        <div class="color-display" id="colorDisplay">
+          <span class="color-hex" id="colorHex">#3498DB</span>
+        </div>
+
+        <div class="color-info">
+          <div class="info-row">
+            <span class="label">HEX</span>
+            <span class="value" id="hexValue">#3498DB</span>
+          </div>
+          <div class="info-row">
+            <span class="label">RGB</span>
+            <span class="value" id="rgbValue">rgb(52, 152, 219)</span>
+          </div>
+        </div>
+
+        <button class="generate-btn" id="generateBtn">Generate Random Color</button>
+
+        <div class="actions">
+          <button class="action-btn" id="copyBtn" title="Copy HEX to clipboard">
+            📋 Copy HEX
+          </button>
+          <button class="action-btn" id="toggleBtn" title="Toggle auto-generate">
+            ▶ Auto
+          </button>
+        </div>
+
+        <div class="history-section">
+          <div class="history-header">
+            <h3>History</h3>
+            <button class="clear-btn" id="clearBtn">Clear</button>
+          </div>
+          <div class="history-list" id="historyList"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
