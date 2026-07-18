@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;   /* Stacks the label on top of the button */
+    justify-content: center;  /* Centers elements vertically */
+    align-items: center;      /* Centers elements horizontally */
+    min-height: 100vh;        /* Uses 100% of the screen's viewport height */
+    margin: 0;                /* Removes browser default spacing edge conflicts */
+}
+
+#myLabel {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;           /* Made slightly larger for better viewing balance */
+    color: blue;
+    margin-bottom: 30px;      /* Creates a clean, predictable gap above the button */
+    text-align: center;
+}
+
+#myButton {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background-color: white;  /* Ensures standard contrast */
+    color: black;
+    
+    /* Fixed border definition */
+    border: 2px solid antiquewhite; 
+    border-radius: 5px;
+    
+    /* Cleaned up padding for an elegant look */
+    padding: 15px 30px;       
+    cursor: pointer;
+    
+    /* Smoothly transitions colors when a user moves their mouse over it */
+    transition: all 0.2s ease-in-out; 
+}
+
+#myButton:hover {
+    color: blue;
+    border-color: blue;
+    background-color: #f0f5ff; /* Subtle blue tint on hover makes it feel highly interactive */
+}
